@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var hashtag = "";
+        var counter;
+        for (counter = 0; counter < 7; counter++) {
+            hashtag += "#";
+            console.log(hashtag);
+
+        }
+        console.log("");
+
+        function countChar() {
+            var count = 0;
+            var txt = "BaBaBab";
+            for (var i = 0; i < txt.length; i++) {
+                if (txt[i] == "B") {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+        console.log("result: ", countChar());
+        console.log("");
+
+
+        function reverseArray() {
+            var arr = [1, 2, 3, 4, 5];
+            arr.reverse();
+            return arr;
+        }
+        console.log(reverseArray());
+
+
+        function reverseArrayInPlace(arr) {
+            for (var i = 0; i <= (arr.length / 2); i++) {
+                let temp = arr[i];
+                arr[i] = arr[arr.length - 1 - i];
+                arr[arr.length - 1 - i] = temp;
+            }
+            return arr;
+        }
+        console.log(reverseArrayInPlace([5,3,4,1,2,7,6]));
+
+    </script>
+</body>
+
+</html>
